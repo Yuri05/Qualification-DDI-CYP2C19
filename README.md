@@ -16,8 +16,7 @@ To demonstrate the level of confidence, the predictive performance of the platfo
 ![DDI CYP2C19 network](Qualification/Input/Content/images/DDI_CYP2C19_Compound_Network.png)
 
 ## Contacts
-For your questions and comments about the models please create a new [issue](https://github.com/Open-Systems-Pharmacology/Qualification-DDI-CYP2C19
-/issues). A full publication about models presented is available at: https://www.mdpi.com/1999-4923/12/12/1191 .
+For your questions and comments about the models please create a new [issue](https://github.com/Open-Systems-Pharmacology/Qualification-DDI-CYP2C19/issues). A full publication about models presented is available at: https://www.mdpi.com/1999-4923/12/12/1191 .
 
 ## Code of conduct
 
