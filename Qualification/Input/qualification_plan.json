@@ -467,7 +467,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 6010,
+                "ObservedDataRecordId": 11050,
                 "SimulationControl": {
                   "Project": "Omeprazole-Fluvoxamine-DDI",
                   "Simulation": "omeprazole 40mg po asian EM",
@@ -493,7 +493,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 6011,
+                "ObservedDataRecordId": 11052,
                 "SimulationControl": {
                   "Project": "Omeprazole-Fluvoxamine-DDI",
                   "Simulation": "omeprazole 40mg po asian PM",
@@ -520,7 +520,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 6020,
+                "ObservedDataRecordId": 11048,
                 "SimulationControl": {
                   "Project": "Omeprazole-Moclobemide-DDI",
                   "Simulation": "omeprazole 40mg po asian EM",
@@ -547,7 +547,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 6021,
+                "ObservedDataRecordId": 11049,
                 "SimulationControl": {
                   "Project": "Omeprazole-Moclobemide-DDI",
                   "Simulation": "omeprazole 40mg po asian PM",
@@ -574,7 +574,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|S-Mephenytoin|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 6030,
+                "ObservedDataRecordId": 15001,
                 "SimulationControl": {
                   "Project": "S-mephenytoin-Fluvoxamine-DDI",
                   "Simulation": "S-Mephenytoin 100mg po",
@@ -600,7 +600,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|S-Mephenytoin|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 6031,
+                "ObservedDataRecordId": 15002,
                 "SimulationControl": {
                   "Project": "S-mephenytoin-Fluvoxamine-DDI",
                   "Simulation": "S-Mephenytoin 100mg po",
@@ -626,7 +626,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|S-Mephenytoin|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 6032,
+                "ObservedDataRecordId": 15003,
                 "SimulationControl": {
                   "Project": "S-mephenytoin-Fluvoxamine-DDI",
                   "Simulation": "S-Mephenytoin 100mg po",
@@ -652,7 +652,7 @@
               {
                 "Output": "Organism|PeripheralVenousBlood|Moclobemide|Plasma (Peripheral Venous Blood)",
                 "ObservedData": "DDI Ratios",
-                "ObservedDataRecordId": 6040,
+                "ObservedDataRecordId": 10027,
                 "SimulationControl": {
                   "Project": "Omeprazole-Moclobemide-DDI",
                   "Simulation": "moclobemide 300mg po asian EM",
