@@ -4,7 +4,7 @@
 
 **Desta 2002** Desta, Z,., Zhao, X,., Shin, J,. G., & Flockhart DA., D. A. (2002). Clinical Significancesignificance of the Cytochromecytochrome P450 2C19 Genetic Polymorphism. *Clin*genetic polymorphism. Clinical pharmacokinetics,  *Pharmacokinet*. 2002;41(12):), 913-958.
 
-**FDA** U.S. Food and Drug Administration. Drug development and drug interactions: table of substrates, inhibitors and inducers. <Website fda.gov/Drugs/DevelopmentApprovalProcess/DevelopmentResources/DrugInteractionsLabeling/ucm093664.html (2017). Accessed 04 March 2019.
+**FDA** U.S. Food and Drug Administration. Drug development and drug interactions: table of substrates, inhibitors and inducers. <Website https://www.fda.gov/drugs/drug-interactions-labeling/drug-development-and-drug-interactions-table-substrates-inhibitors-and-inducers (2017). Accessed 04 March 2019.
 
 **Goldstein 2001** Goldstein JA., J. A. (2001). Clinical relevance of genetic polymorphisms in the human CYP2C subfamily. *Br J Clin Pharmacol*. 2001;British journal of clinical pharmacology, 52(4):), 349-355.
 

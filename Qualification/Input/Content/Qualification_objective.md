@@ -13,7 +13,3 @@ Please refer to the [Appendix](#6-Appendix) to learn more details:
 - [Section 6.2](#62-Mathematical-Implementation-of-Drug-Drug-Interactions) shows the implementation of the underlying mathematical equations for drug-drug interactions in the OSP suite.
 
 - A detailed general description of the performed qualification workflow (*qualification plan*, *qualification report*, etc.) can be found in chapter [Section 6.3](#63-automatic-re-qualification-workflow).
-
-  
-
-
