@@ -60,7 +60,7 @@ reportConfigurationPlan = 'report-configuration-plan.json';
 WSettings.Watermark = '';
 
 % run the Worklfow tasklist of ConfigurationPlan
-SubunitsForDDIPlot = {'Mechanism','Perpetrator','Victim'}; % e.g. {'Mechanism', 'Perpetrator', 'Victim'}
+SubunitsForDDIPlot = {'Perpetrator','Victim'}; % e.g. {'Mechanism', 'Perpetrator', 'Victim'}
 runQualificationWorkflow(WSettings, ConfigurationPlan, TaskList, ObservedDataSets, SubunitsForDDIPlot);
 
 QualificationWorkflowTime = toc/60;

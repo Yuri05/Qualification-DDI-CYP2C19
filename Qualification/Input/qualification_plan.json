@@ -3,7 +3,7 @@
   "Projects": [
     {
       "Id": "Fluvoxamine",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Fluvoxamine-Model/altv1.0/Fluvoxamine-Model.json"
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Fluvoxamine-Model/alt_v1.0/Fluvoxamine-Model.json"
     },
     {
       "Id": "Moclobemide",
