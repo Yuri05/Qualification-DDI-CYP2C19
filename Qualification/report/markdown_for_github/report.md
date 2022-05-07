@@ -47,13 +47,13 @@ To demonstrate the level of confidence, the predictive performance of the platfo
 
 The respective *qualification plan* to produce this *qualification report* is transparently documented and provided open-source (https://github.com/Open-Systems-Pharmacology/OSP-Qualification-Reports). The same applies for all presented PBPK models including *evaluation reports* on model building and evaluation of each model (https://github.com/Open-Systems-Pharmacology/OSP-PBPK-Model-Library).
 
-*Evaluation reports* including descriptions on model building and detailed evaluations of the included models are documented separately (see [Section 1.2](#12-CYP2C19-DDI-Network)).
+*Evaluation reports* including descriptions on model building and detailed evaluations of the included models are documented separately (see [Section 1.2](#12-cyp2c19-ddi-network)).
 
-Please refer to the [Appendix](#6-Appendix) to learn more details:
+Please refer to the [Appendix](#6-appendix) to learn more details:
 
 - An overview over the Open Systems Pharmacology Suite is given in chapter [Section 6.1](#61-open-systems-pharmacology-suite-osps-introduction)
 
-- [Section 6.2](#62-Mathematical-Implementation-of-Drug-Drug-Interactions) shows the implementation of the underlying mathematical equations for drug-drug interactions in the OSP suite.
+- [Section 6.2](#62-mathematical-implementation-of-drug-drug-interactions) shows the implementation of the underlying mathematical equations for drug-drug interactions in the OSP suite.
 
 - A detailed general description of the performed qualification workflow (*qualification plan*, *qualification report*, etc.) can be found in chapter [Section 6.3](#63-automatic-re-qualification-workflow).
 
@@ -62,11 +62,11 @@ Please refer to the [Appendix](#6-Appendix) to learn more details:
 
 
 ## 1.2 CYP2C19 DDI Network
-CYP2C19 is an important enzyme for the metabolism of about 10% of therapeutical drugs, including proton pump inhibitors (PPIs, e.g., omeprazole), antidepressants (e.g., imipramine), anticonvulsants (phenytoin, S-mephenytoin), hypnotics and sedatives (e.g., phenobarbital), antimalarial (proguanil), antiretroviral (nelfinavir), antifungal (voriconazole), and antiplatelet drugs (clopidogrel) ([Goldstein 2001](#5-References),  [Desta 2002](#5-References)). Genetic polymorphism exists for CYP2C19 expression, with approximately 3%–5% of European and 15%–20% of Asian populations being poor metabolizers with no CYP2C19 activity  ([Goldstein 2001](#5-References),  [Bertilsson 1995](#5-References)). Based on the metabolic capacity of CYP2C19, individuals can be divided into four categories: extensive metabolizers (EMs) carrying normal alleles, intermediate metabolizers (IMs) carrying one defective allele, poor metabolizers (PMs) carrying two defective alleles, and ultra-rapid metabolizers (UMs) homozygous for alleles which increase the CYP2C19 expression or activity higher than in EMs. Well-known substrates of CYP2C19 are mephenytoin, omeprazole, and moclobemide.
+CYP2C19 is an important enzyme for the metabolism of about 10% of therapeutical drugs, including proton pump inhibitors (PPIs, e.g., omeprazole), antidepressants (e.g., imipramine), anticonvulsants (phenytoin, S-mephenytoin), hypnotics and sedatives (e.g., phenobarbital), antimalarial (proguanil), antiretroviral (nelfinavir), antifungal (voriconazole), and antiplatelet drugs (clopidogrel) ([Goldstein 2001](#5-references),  [Desta 2002](#5-references)). Genetic polymorphism exists for CYP2C19 expression, with approximately 3%–5% of European and 15%–20% of Asian populations being poor metabolizers with no CYP2C19 activity  ([Goldstein 2001](#5-references),  [Bertilsson 1995](#5-references)). Based on the metabolic capacity of CYP2C19, individuals can be divided into four categories: extensive metabolizers (EMs) carrying normal alleles, intermediate metabolizers (IMs) carrying one defective allele, poor metabolizers (PMs) carrying two defective alleles, and ultra-rapid metabolizers (UMs) homozygous for alleles which increase the CYP2C19 expression or activity higher than in EMs. Well-known substrates of CYP2C19 are mephenytoin, omeprazole, and moclobemide.
 
 Like other CYPs, CYP2C19 is subject to induction and/or inhibition by a number of compounds, which can result in significant drug interactions in clinical practice.
 
-The U.S. Food and Drug Administration (FDA) lists several perpetrator and victim drugs of interactions in the CYP2C19 network ([Goldstein 2001](#5-References)). For instance, omeprazole is a sensitive index substrate for CYP2C19, and fluvoxamine is listed as a strong clinical index inhibitor for CYP2C19 pathway.
+The U.S. Food and Drug Administration (FDA) lists several perpetrator and victim drugs of interactions in the CYP2C19 network ([Goldstein 2001](#5-references)). For instance, omeprazole is a sensitive index substrate for CYP2C19, and fluvoxamine is listed as a strong clinical index inhibitor for CYP2C19 pathway.
 
 To qualify the developed models for the prediction of the CYP2C19 DDI potential of new drugs, a set of verified PBPK models of index perpetrators and respective CYP2C19 DDI victim drugs is specified to set up a CYP2C19-mediated DDI modeling network.
 
@@ -104,67 +104,67 @@ The following interaction studies were predicted and used to qualify/optimize th
 **Figure** **1: CYP2C19 DDI modeling network**
 ![DDI CYP2C19 network](images/DDI_CYP2C19_Compound_Network.png)
 
-The Ki values used to predict the interactions are listed in [Table 1](#Table 1).
+The Ki values used to predict the interactions are listed in [Table 1](#table-1).
 
 | **Inhibitor category** | **Inhibitor** | **Substrate**  | **Ki**                                                       | **Reference**                                                |
 | ---------------------- | ------------- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Strong CYP2C19         | Fluvoxamine   | Omeprazole     | 3.6 nM                                                       | [Iga 2016](#5-References)                                    |
-|                        |               | S-Mephenytoin | 2.6 nM                                                       | [Iga 2016](#5-References)                                    |
+| Strong CYP2C19         | Fluvoxamine   | Omeprazole     | 3.6 nM                                                       | [Iga 2016](#5-references)                                    |
+|                        |               | S-Mephenytoin | 2.6 nM                                                       | [Iga 2016](#5-references)                                    |
 | Moderate CYP2C19       | Moclobemide   | Omeprazole     | 203.83 µM<sup>1</sup><br />TDI 94.85 µM                      | Fit                                                          |
-|                        | Omeprazole    | Moclobemide    | S-ome: 3.1 µM<br />TDI 0.3 µM<br />R-ome: 5.3 µM<br />TDI 1.6 µM | [Liu 2005](#5-References)<br />[Wu 2014](#5-References)<br />[Liu 2005](#5-References)<br />[Wu 2014](#5-References) |
+|                        | Omeprazole    | Moclobemide    | S-ome: 3.1 µM<br />TDI 0.3 µM<br />R-ome: 5.3 µM<br />TDI 1.6 µM | [Liu 2005](#5-references)<br />[Wu 2014](#5-references)<br />[Liu 2005](#5-references)<br />[Wu 2014](#5-references) |
 
-**Table 1:**<a name="Table 1"></a> Ki values used in CYP2C19 DDI network. <sup>1</sup>Literature value = 204 µM
+**Table 1:**<a name="table-1"></a> Ki values used in CYP2C19 DDI network. <sup>1</sup>Literature value = 204 µM
 
 The published DDI studies between the respective perpetrators and victim drugs were simulated and compared to observed data. The following sections give an overview of the clinical studies being part of this qualification report.
 ### Omeprazole - Moclobemide DDI
-The omeprazole-moclobemide interaction was evaluated using clinical DDI studies listed in [Table 2](#Table 2).
+The omeprazole-moclobemide interaction was evaluated using clinical DDI studies listed in [Table 2](#table-2).
 
 | **Source**                | **Route** | **Dose [mg] /** **Schedule \*** | **Pop.** | **Sex** | **N** | **Form.** | **Comment**       |
 | ------------------------- | --------- | ------------------------------- | -------- | ------- | ----- | --------- | ----------------- |
-| [Cho 2002](#5-References) | p.o       | 20                              | HV asian | -       | -     | capsule   | EM +/-moclobemide |
-| [Cho 2002](#5-References) | p.o       | 20                              | HV asian | -       | -     | capsule   | PM +/-moclobemide |
+| [Cho 2002](#5-references) | p.o       | 20                              | HV asian | -       | -     | capsule   | EM +/-moclobemide |
+| [Cho 2002](#5-references) | p.o       | 20                              | HV asian | -       | -     | capsule   | PM +/-moclobemide |
 
-**Table 2:**<a name="Table 2"></a> Literature sources of clinical concentration data of omeprazole used for DDI prediction qualification with moclobemide. *-: respective information was not provided in the literature source; \*:single dose unless otherwise specified; EM: extensive metabolizers; PM: poor metabolizers*
+**Table 2:**<a name="table-2"></a> Literature sources of clinical concentration data of omeprazole used for DDI prediction qualification with moclobemide. *-: respective information was not provided in the literature source; \*:single dose unless otherwise specified; EM: extensive metabolizers; PM: poor metabolizers*
 
 A dynamical DDI simulation with moclobemide and omeprazole was conducted and compared to literature data. Both compounds act as CYP2C19 inhibitors and victims. The predefined typical Japanese subject (age = 30 y, weight = 61.87 kg, height = 168.99 cm, BMI = 21.67 kg/m2) was used with CYP3A4, CYP2C19, CYP2D6 and CYP1A2 expressions from RT PCR database in PK-Sim and adapted CYP2C19 expression in gut (see evaluation report of omeprazole for more details). Additional enzyme "FMO (other)" was added and expressed in liver only.
 
-In [Cho 2002](#5-References), sixteen volunteers, of whom eight were extensive metabolizers (EM) and eight were poor metabolizers (PM) for CYP2C19, received oral doses of 40 mg omeprazole with or without 300 mg moclobemide co-administration. 
+In [Cho 2002](#5-references), sixteen volunteers, of whom eight were extensive metabolizers (EM) and eight were poor metabolizers (PM) for CYP2C19, received oral doses of 40 mg omeprazole with or without 300 mg moclobemide co-administration. 
 
 The pharmacokinetic change of omeprazole, omeprazole sulphone and 5-hydroxyomeprazole concentrations were assessed to test for an interaction between omeprazole and moclobemide.
 ### Omeprazole - Fluvoxamine DDI
-The omeprazole-fluvoxamine interaction was evaluated using clinical DDI studies listed in [Table 3](#Table 3).
+The omeprazole-fluvoxamine interaction was evaluated using clinical DDI studies listed in [Table 3](#table-3).
 
 | **Source**                           | **Route** | **Dose [mg] /** **Schedule \*** | **Pop.**    | **Sex** | **N** | **Form.** | **Comment**          |
 | ------------------------------------ | --------- | ------------------------------- | ----------- | ------- | ----- | --------- | -------------------- |
-| [Yasui-Furukori 2004](#5-References) | p.o.      | 40                              | HV japanese | M - F   | 6     | omepral   | hmEM +/- fluvoxamine |
-| [Yasui-Furukori 2004](#5-References) | p.o.      | 40                              | HV japanese | M - F   | 6     | omepral   | PM +/- fluvoxamine   |
+| [Yasui-Furukori 2004](#5-references) | p.o.      | 40                              | HV japanese | M - F   | 6     | omepral   | hmEM +/- fluvoxamine |
+| [Yasui-Furukori 2004](#5-references) | p.o.      | 40                              | HV japanese | M - F   | 6     | omepral   | PM +/- fluvoxamine   |
 
-**Table 3:**<a name="Table 3"></a> Literature sources of clinical concentration data of omeprazole used for DDI prediction qualification with fluvoxamine. *\*:single dose unless otherwise specified; hmEM: homozygous extensive metabolizers; PM: poor metabolizers*
+**Table 3:**<a name="table-3"></a> Literature sources of clinical concentration data of omeprazole used for DDI prediction qualification with fluvoxamine. *\*:single dose unless otherwise specified; hmEM: homozygous extensive metabolizers; PM: poor metabolizers*
 
-A dynamical DDI simulation with fluvoxamine as CYP2C19 inhibitor and omeprazole as victim was conducted and compared to literature data. The predefined typical Japanese subject (age = 30 y, weight = 61.87 kg, height = 168.99 cm, BMI = 21.67 kg/m2) was used with CYP3A4, CYP2C19, CYP2D6 and CYP1A2 expression from RT PCR database in PK-Sim and adapted CYP2C19 expression in gut (see evaluation report of omeprazole for more details). Additional enzyme "FMO (other)" was added and expressed in liver only. The Ki value of 3.6 nmol/l for the inhibition of CYP2C19 by fluvoxamine was selected in agreement with literature data ([Iga 2016](#5-References)).
+A dynamical DDI simulation with fluvoxamine as CYP2C19 inhibitor and omeprazole as victim was conducted and compared to literature data. The predefined typical Japanese subject (age = 30 y, weight = 61.87 kg, height = 168.99 cm, BMI = 21.67 kg/m2) was used with CYP3A4, CYP2C19, CYP2D6 and CYP1A2 expression from RT PCR database in PK-Sim and adapted CYP2C19 expression in gut (see evaluation report of omeprazole for more details). Additional enzyme "FMO (other)" was added and expressed in liver only. The Ki value of 3.6 nmol/l for the inhibition of CYP2C19 by fluvoxamine was selected in agreement with literature data ([Iga 2016](#5-references)).
 
-In [Yasui-Furukori 2004](#5-References), eighteen volunteers, of whom six were homozygous extensive metabolizers (hmEMs), six were heterozygous EMs (htEMs) and six were poor metabolizers (PMs) for CYP2C19, received two six-day courses of either daily 50 mg fluvoxamine (split in 25 mg twice daily) or placebo in a randomized fashion with a single oral 40 mg dose of omeprazole on day six in both cases. Plasma concentrations of omeprazole and its metabolites, 5-hydroxyomeprazole, omeprazole sulphone, and fluvoxamine were monitored up to 8 h after the dosing.
+In [Yasui-Furukori 2004](#5-references), eighteen volunteers, of whom six were homozygous extensive metabolizers (hmEMs), six were heterozygous EMs (htEMs) and six were poor metabolizers (PMs) for CYP2C19, received two six-day courses of either daily 50 mg fluvoxamine (split in 25 mg twice daily) or placebo in a randomized fashion with a single oral 40 mg dose of omeprazole on day six in both cases. Plasma concentrations of omeprazole and its metabolites, 5-hydroxyomeprazole, omeprazole sulphone, and fluvoxamine were monitored up to 8 h after the dosing.
 
 ### S-Mephenytoin - Fluvoxamine DDI
-The S-mephenytoin-fluvoxamine interaction was evaluated using clinical DDI studies listed in [Table 4](#Table 4).
+The S-mephenytoin-fluvoxamine interaction was evaluated using clinical DDI studies listed in [Table 4](#table-4).
 
 | **Source**                | **Route** | **Dose [mg]/**  **Schedule \*** | **Pop.** | **Sex** | **N** | **Form.** | **Comment**                                                  |
 | ------------------------- | --------- | ------------------------------- | -------- | ------- | ----- | --------- | ------------------------------------------------------------ |
-| [Yao 2003](#5-References) | p.o.      | 100 mg s.d.                     | HV       | m/f     | 12    | -         | S-mephenytoin, with  and without Fluvoxamine MD of 37.5, 62.5 and 87.5 mg/day |
+| [Yao 2003](#5-references) | p.o.      | 100 mg s.d.                     | HV       | m/f     | 12    | -         | S-mephenytoin, with  and without Fluvoxamine MD of 37.5, 62.5 and 87.5 mg/day |
 
-**Table 4:**<a name="Table 4"></a> Literature sources of clinical concentration data of S-mephenytoin used for DDI prediction qualification with fluvoxamine. *-: respective information was not provided in the literature source; \*:single dose unless otherwise specified*
+**Table 4:**<a name="table-4"></a> Literature sources of clinical concentration data of S-mephenytoin used for DDI prediction qualification with fluvoxamine. *-: respective information was not provided in the literature source; \*:single dose unless otherwise specified*
 
 A dynamical DDI simulation with fluvoxamine was used to predict the effect of a strong CYP2C19 inhibitor on S-mephenytoin exposure. The predefined “Standard European Male for DDI” individual (age = 30 y, weight = 73 kg, height = 176 cm, BMI = 23.57 kg/m2) with adapted CYP2C19 expression in gut (see evaluation report of omeprazole for more details) was used. Ki value of 2.6 nmol/l for the inhibition of CYP2C19 was selected.
 
-Predictions were compared to clinical results from [Yao 2003](#5-References), where the effect of different fluvoxamine doses in S-Mephenytoin was investigated. 100 mg S-mephenytoin were administered after 7 days of placebo or fluvoxamine treatment (27.5, 45.8, or 64.1 mg).
+Predictions were compared to clinical results from [Yao 2003](#5-references), where the effect of different fluvoxamine doses in S-Mephenytoin was investigated. 100 mg S-mephenytoin were administered after 7 days of placebo or fluvoxamine treatment (27.5, 45.8, or 64.1 mg).
 ### Moclobemide - Omeprazole DDI
-The moclobemide-omeprazole interaction was evaluated using clinical DDI studies listed in [Table 5](#Table 5).
+The moclobemide-omeprazole interaction was evaluated using clinical DDI studies listed in [Table 5](#table-5).
 
 | **Source**               | **Route** | **Dose [mg]/**  **Schedule \*** | **Pop.** | **Sex** | **N** | **Form.** | **Comment**       |
 | ------------------------ | --------- | ------------------------------- | -------- | ------- | ----- | --------- | ----------------- |
-| [Yu 2001](#5-References) | p.o       | 300 s.d.                        | HV-Asian | m       | 8     | tablet    | EM +/- omeprazole |
+| [Yu 2001](#5-references) | p.o       | 300 s.d.                        | HV-Asian | m       | 8     | tablet    | EM +/- omeprazole |
 
-**Table 5:**<a name="Table 5"></a> Literature sources of clinical concentration data of moclobemide used for DDI prediction qualification omeprazole. *\*:single dose unless otherwise specified; EM: extensive metabolizers*
+**Table 5:**<a name="table-5"></a> Literature sources of clinical concentration data of moclobemide used for DDI prediction qualification omeprazole. *\*:single dose unless otherwise specified; EM: extensive metabolizers*
 
 A dynamical DDI simulation with moclobemide and omeprazole was conducted and compared to literature data. Both compounds act as CYP2C19 inhibitors and victims. 300 mg moclobemide with or without a single dose of 40 mg omeprazole (racemate, i.e. 20 mg S-omeprazole and 20 mg R-omeprazole) was simulated. The predefined typical Japanese subject (age = 30 y, weight = 61.87 kg, height = 168.99 cm, BMI = 21.67 kg/m2) was used with CYP3A4, CYP2C19, CYP2D6 and CYP1A2 expressions from RT PCR database in PK-Sim and adapted CYP2C19 expression in gut (see evaluation report of omeprazole for more details). Additional enzyme "FMO (other)" was added and expressed in liver only.
 # 2 Qualification of Use Case CYP2C19-mediated DDI
@@ -180,7 +180,7 @@ Specifically, the PBPK model performance for the PK parameters **AUC ratio (AUCR
   
   ![GMFE equation](images/GFME_equation.PNG)
   
-- number of AUCR and CMAXR falling within 2-fold error range and within the limits as suggested by [Guest et al. 2011](#5-References)
+- number of AUCR and CMAXR falling within 2-fold error range and within the limits as suggested by [Guest et al. 2011](#5-references)
   
 - detailed table of results for each study
 
@@ -189,7 +189,7 @@ In the plots,
 
 - the dotted lines denote 0.50–2.00 (2-fold) criterion,
 
-- the solid lines denote the limits as suggested by [Guest et al. 2011](#5-References),
+- the solid lines denote the limits as suggested by [Guest et al. 2011](#5-references),
 
 - the bold solid line denotes the unity line,
 
