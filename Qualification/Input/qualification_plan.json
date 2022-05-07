@@ -1,26 +1,25 @@
 {
-  "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v2.2/OSP_Qualification_Plan_Schema.json",
+  "$schema": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/QualificationPlan/v2.3/schemas/OSP_Qualification_Plan_Schema.json",
   "Projects": [
     {
       "Id": "Fluvoxamine",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Fluvoxamine-Model/cyp1a2_cyp2C19_DDI/Fluvoxamine-Model.json"
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Fluvoxamine-Model/alt_v1.0/Fluvoxamine-Model.json"
     },
     {
       "Id": "Moclobemide",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Moclobemide-Model/v1.0/Moclobemide-Model.json"
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Moclobemide-Model/v1.1/Moclobemide-Model.json"
     },
     {
       "Id": "Omeprazole",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Omeprazole-Model/v1.0/Omeprazole-Model.json"
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Omeprazole-Model/v1.1/Omeprazole-Model.json"
     },
     {
       "Id": "S_Mephenytoin",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/S-Mephenytoin-Model/v1.0/S_Mephenytoin-Model.json"
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/S-Mephenytoin-Model/v1.1/S_Mephenytoin-Model.json"
     },
-
     {
       "Id": "Omeprazole-Fluvoxamine-DDI",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Fluvoxamine-Omeprazole-DDI/v1.0/Fluvoxamine-Omeprazole-DDI.json",
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Fluvoxamine-Omeprazole-DDI/v1.1/Fluvoxamine-Omeprazole-DDI.json",
       "BuildingBlocks": [
         {
           "Type": "Compound",
@@ -56,10 +55,9 @@
       "SimulationParameters": [
       ]
     },
-
     {
       "Id": "Omeprazole-Moclobemide-DDI",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Moclobemide-Omeprazole-DDI/v1.0/Moclobemide-Omeprazole-DDI.json",
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Moclobemide-Omeprazole-DDI/v1.1/Moclobemide-Omeprazole-DDI.json",
       "BuildingBlocks": [
         {
           "Type": "Compound",
@@ -95,10 +93,9 @@
       "SimulationParameters": [
       ]
     },
-
     {
       "Id": "S-mephenytoin-Fluvoxamine-DDI",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Fluvoxamine-S-mephenytoin-DDI/v1.0/Fluvoxamine-S-mephenytoin-DDI.json",
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Fluvoxamine-S-mephenytoin-DDI/v1.1/Fluvoxamine-S-mephenytoin-DDI.json",
       "BuildingBlocks": [
         {
           "Type": "Compound",
@@ -123,7 +120,7 @@
   "ObservedDataSets": [
     {
       "Id": "DDI Ratios",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/v1.2/DDI.csv",
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/v1.4/DDI.csv",
       "Type": "DDIRatio"
     }
   ],
@@ -679,7 +676,7 @@
     {
       "Id": 1,
       "Title": "1 Introduction",
-      "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.1/Empty.md",
+      "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Empty.md",
       "Sections": [
         {
           "Id": 11,
@@ -728,22 +725,22 @@
         {
           "Id": 301,
           "Title": "3.1 Omeprazole - Moclobemide DDI",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.1/Empty.md"
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Empty.md"
         },
         {
           "Id": 302,
           "Title": "3.2 Omeprazole - Fluvoxamine DDI",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.1/Empty.md"
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Empty.md"
         },
         {
           "Id": 303,
           "Title": "3.3 S-Mephenytoin - Fluvoxamine DDI",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.1/Empty.md"
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Empty.md"
         },
         {
           "Id": 304,
           "Title": "3.4 Moclobemide - Omeprazole DD",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.1/Empty.md"
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Empty.md"
         }
       ]
     },
@@ -762,22 +759,22 @@
     {
       "Id": 6,
       "Title": "6 Appendix",
-      "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.1/Empty.md",
+      "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Empty.md",
       "Sections": [
         {
           "Id": 61,
           "Title": "6.1 Open Systems Pharmacology Suite (OSPS) Introduction",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.1/OSPS_Introduction.md"
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/OSPS_Introduction.md"
         },
         {
           "Id": 62,
           "Title": "6.2 Mathematical Implementation of Drug-Drug Interactions",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.1/Mathematical_Implementation_of_DDI.md"
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Mathematical_Implementation_of_DDI.md"
         },
         {
           "Id": 63,
           "Title": "6.3 Automatic (re)-qualification workflow",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.1/Qualification_Workflow.md"
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Qualification_Workflow.md"
         }
       ]
     },
