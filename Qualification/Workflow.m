@@ -6,15 +6,17 @@ close all
 clear all
 tic
 
+addpath(genpath('C:\CompletSetup_SBSuite\QualificationFramework\Version_2.3\ReportingEngine_3.0.1.53'))
+
 if exist(fullfile(cd,'re_input'),'dir')>0 rmdir(fullfile(cd,'re_input'),'s'); end
 if exist(fullfile(cd,'re_output'),'dir')>0 rmdir(fullfile(cd,'re_output'),'s'); end
 if exist(fullfile(cd,'report'),'dir')>0 rmdir(fullfile(cd,'report'),'s'); end
 
 % --------------------------------------------------------------
 % replace qualificationRunnerFolder and markdownJoinerFolder with your paths
-qualificationRunnerFolder = 'c:\Program Files\Open Systems Pharmacology\QualificationRunner 9.0';
-markdownJoinerFolder = 'c:\Program Files\Open Systems Pharmacology\markdown-joiner';
-PKSimPortableFolder = 'd:\Work\PK-Sim\';
+qualificationRunnerFolder = 'C:\CompletSetup_SBSuite\QualificationFramework\Version_3.0_beta\QualificationRunner_11.0.128';
+markdownJoinerFolder = 'C:\CompletSetup_SBSuite\QualificationFramework\Version_2.3\markdown-joiner_1.2.0.8';
+PKSimPortableFolder = 'C:\CompletSetup_SBSuite\QualificationFramework\Version_3.0_beta\PK-Sim_11.0.140';
 
 % --------------------------------------------------------------
 % replace baseDir and qualificationPlanName with your paths
