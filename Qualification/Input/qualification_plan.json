@@ -17,7 +17,6 @@
       "Id": "S_Mephenytoin",
       "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/S-Mephenytoin-Model/v1.1/S_Mephenytoin-Model.json"
     },
-
     {
       "Id": "Omeprazole-Fluvoxamine-DDI",
       "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Fluvoxamine-Omeprazole-DDI/v1.1/Fluvoxamine-Omeprazole-DDI.json",
@@ -56,7 +55,6 @@
       "SimulationParameters": [
       ]
     },
-
     {
       "Id": "Omeprazole-Moclobemide-DDI",
       "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Moclobemide-Omeprazole-DDI/v1.1/Moclobemide-Omeprazole-DDI.json",
@@ -95,7 +93,6 @@
       "SimulationParameters": [
       ]
     },
-
     {
       "Id": "S-mephenytoin-Fluvoxamine-DDI",
       "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Fluvoxamine-S-mephenytoin-DDI/v1.1/Fluvoxamine-S-mephenytoin-DDI.json",
@@ -123,7 +120,7 @@
   "ObservedDataSets": [
     {
       "Id": "DDI Ratios",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/master/DDI.csv",
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/v1.4/DDI.csv",
       "Type": "DDIRatio"
     }
   ],
