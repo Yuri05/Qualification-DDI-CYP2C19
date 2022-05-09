@@ -9,21 +9,21 @@ To qualify the developed models for the prediction of the CYP2C19 DDI potential 
 The following perpetrator compounds were selected: 
 
 - **Fluvoxamine** (strong CYP2C19 inhibitor)
-  Model snapshot and evaluation plan (*release* **v1.0**): https://github.com/Open-Systems-Pharmacology/Fluvoxamine-Model/releases/tag/v1.0
+  Model snapshot and evaluation plan (*release* **alt_v1.0**): https://github.com/Open-Systems-Pharmacology/Fluvoxamine-Model/releases/tag/alt_v1.0
 - **Omeprazole** (moderate CYP2C19 inhibitor)
-  Model snapshot and evaluation plan (*release* **v1.0**): https://github.com/Open-Systems-Pharmacology/Omeprazole-Model/releases/tag/v1.0
+  Model snapshot and evaluation plan (*release* **v1.1**): https://github.com/Open-Systems-Pharmacology/Omeprazole-Model/releases/tag/v1.1
 - **Moclobemide** (moderate CYP2C19 inhibitor)
-  Model snapshot and evaluation plan (*release* **v1.0**): https://github.com/Open-Systems-Pharmacology/Moclobemide-Model/releases/tag/v1.0
+  Model snapshot and evaluation plan (*release* **v1.1**): https://github.com/Open-Systems-Pharmacology/Moclobemide-Model/releases/tag/v1.1
 
 
 The following sensitive CYP2C19 substrates as victim drugs were selected:
 
 - **Omeprazole**
-  Model snapshot and evaluation plan (*release* **v1.0**): https://github.com/Open-Systems-Pharmacology/Omeprazole-Model/releases/tag/v1.0
+  Model snapshot and evaluation plan (*release* **v1.1**): https://github.com/Open-Systems-Pharmacology/Omeprazole-Model/releases/tag/v1.1
 - **S-Mephenytoin**
-  Model snapshot and evaluation plan (*release* **v1.0**): https://github.com/Open-Systems-Pharmacology/S-Mephenytoin-Model/releases/tag/v1.0
+  Model snapshot and evaluation plan (*release* **v1.1**): https://github.com/Open-Systems-Pharmacology/S-Mephenytoin-Model/releases/tag/v1.1
 - **Moclobemide**
-  Model snapshot and evaluation plan (*release* **v1.0**): https://github.com/Open-Systems-Pharmacology/Moclobemide-Model/releases/tag/v1.0
+  Model snapshot and evaluation plan (*release* **v1.1**): https://github.com/Open-Systems-Pharmacology/Moclobemide-Model/releases/tag/v1.1
 
 The following interaction studies were predicted and used to qualify/optimize the final network:
 

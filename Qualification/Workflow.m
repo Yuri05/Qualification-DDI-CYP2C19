@@ -6,15 +6,11 @@ close all
 clear all
 tic
 
-if exist(fullfile(cd,'re_input'),'dir')>0 rmdir(fullfile(cd,'re_input'),'s'); end
-if exist(fullfile(cd,'re_output'),'dir')>0 rmdir(fullfile(cd,'re_output'),'s'); end
-if exist(fullfile(cd,'report'),'dir')>0 rmdir(fullfile(cd,'report'),'s'); end
-
 % --------------------------------------------------------------
 % replace qualificationRunnerFolder and markdownJoinerFolder with your paths
-qualificationRunnerFolder = 'c:\Program Files\Open Systems Pharmacology\QualificationRunner 9.0';
-markdownJoinerFolder = 'c:\Program Files\Open Systems Pharmacology\markdown-joiner';
-PKSimPortableFolder = 'd:\Work\PK-Sim\';
+qualificationRunnerFolder = 'c:\Program Files\Open Systems Pharmacology\QualificationRunner 10';
+markdownJoinerFolder = 'c:\Program Files\Open Systems Pharmacology\markdown-joiner\';
+PKSimPortableFolder = 'd:\Work\OSPS\Repos\PK-Sim10.0\';
 
 % --------------------------------------------------------------
 % replace baseDir and qualificationPlanName with your paths
@@ -46,6 +42,10 @@ REInput_path = fullfile(baseDir,'re_input');
 REOutput_path = fullfile(baseDir,'re_output');
 ReportOutput_path=fullfile(baseDir,'report');
 
+if exist(fullfile(REInput_path),'dir')>0 rmdir(fullfile(cd,'re_input'),'s'); end
+if exist(fullfile(REOutput_path),'dir')>0 rmdir(fullfile(cd,'re_output'),'s'); end
+if exist(fullfile(ReportOutput_path),'dir')>0 rmdir(fullfile(cd,'report'),'s'); end
+
 % --------------------------------------------------------------
 % STEP #1: start qualification runner to generate inputs for the reporting engine
 startQualificationRunner(qualificationRunnerFolder, qualificationPlan, REInput_path, ['-p ' PKSimPortableFolder]);
@@ -60,7 +60,7 @@ reportConfigurationPlan = 'report-configuration-plan.json';
 WSettings.Watermark = '';
 
 % run the Worklfow tasklist of ConfigurationPlan
-SubunitsForDDIPlot = {}; % e.g. {'Mechanism', 'Perpetrator', 'Victim'}
+SubunitsForDDIPlot = {'Perpetrator','Victim'}; % e.g. {'Mechanism', 'Perpetrator', 'Victim'}
 runQualificationWorkflow(WSettings, ConfigurationPlan, TaskList, ObservedDataSets, SubunitsForDDIPlot);
 
 QualificationWorkflowTime = toc/60;
