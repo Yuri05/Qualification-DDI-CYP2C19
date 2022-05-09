@@ -23,5 +23,5 @@ The predicted perpetrator/victim drug concentration-time profiles, DDI AUC and C
 
 **Moclobemide** 
 
-- Perpetrator: DDI simulations with moclobemide as inhibitor of omeprazole demonstrated good prediction of omeprazole levels for different CYP2C19 phenotypes. The levels for EM were slightly underpredicte. Predictions for PM were excellent.
+- Perpetrator: DDI simulations with moclobemide as inhibitor of omeprazole demonstrated good prediction of omeprazole levels for different CYP2C19 phenotypes. The levels for EM were slightly underpredicted. Predictions for PM were excellent.
 - Substrate: DDI simulations with omeprazole as inhibitor of moclobemide demonstrated a good prediction of moclobemide levels.
