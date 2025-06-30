@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/QualificationPlan/v2.3/schemas/OSP_Qualification_Plan_Schema.json",
+  "$schema": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/QualificationPlan/v3.3/schemas/OSP_Qualification_Plan_Schema.json",
   "Projects": [
     {
       "Id": "Fluvoxamine",
@@ -52,8 +52,7 @@
           "Project": "Fluvoxamine"
         }
       ],
-      "SimulationParameters": [
-      ]
+      "SimulationParameters": []
     },
     {
       "Id": "Omeprazole-Moclobemide-DDI",
@@ -90,8 +89,7 @@
           "Project": "Moclobemide"
         }
       ],
-      "SimulationParameters": [
-      ]
+      "SimulationParameters": []
     },
     {
       "Id": "S-mephenytoin-Fluvoxamine-DDI",
@@ -113,14 +111,13 @@
           "Project": "Fluvoxamine"
         }
       ],
-      "SimulationParameters": [
-      ]
+      "SimulationParameters": []
     }
   ],
   "ObservedDataSets": [
     {
       "Id": "DDI Ratios",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/v1.4/DDI.csv",
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/v1.7/DDI.csv",
       "Type": "DDIRatio"
     }
   ],
@@ -238,7 +235,7 @@
     "GOFMergedPlots": [],
     "ComparisonTimeProfilePlots": [
       {
-        "SectionId": 301,
+        "SectionReference": "omeprazole-moclobemide-ddi",
         "Title": "Cho 2002 (Omeprazole 40 mg po) Asian EM",
         "SimulationDuration": 12,
         "TimeUnit": "h",
@@ -268,7 +265,7 @@
         ]
       },
       {
-        "SectionId": 301,
+        "SectionReference": "omeprazole-moclobemide-ddi",
         "Title": "Cho 2002 (Omeprazole 40 mg po) Asian PM",
         "SimulationDuration": 12,
         "TimeUnit": "h",
@@ -297,9 +294,8 @@
           }
         ]
       },
-
       {
-        "SectionId": 302,
+        "SectionReference": "omeprazole-fluvoxamine-ddi",
         "Title": "Yasui-Furukori 2004 (Omeprazole 40 mg po) Asian EM",
         "SimulationDuration": 128,
         "TimeUnit": "h",
@@ -329,7 +325,7 @@
         ]
       },
       {
-        "SectionId": 302,
+        "SectionReference": "omeprazole-fluvoxamine-ddi",
         "Title": "Yasui-Furukori 2004 (Omeprazole 40 mg po) Asian PM",
         "SimulationDuration": 128,
         "TimeUnit": "h",
@@ -358,9 +354,8 @@
           }
         ]
       },
-
       {
-        "SectionId": 303,
+        "SectionReference": "s-mephenytoin-fluvoxamine-ddi",
         "Title": "Yao 2003 (S-Mephenytoin 100 mg po)",
         "SimulationDuration": 180,
         "TimeUnit": "h",
@@ -411,9 +406,8 @@
           }
         ]
       },
-
       {
-        "SectionId": 304,
+        "SectionReference": "moclobemide-omeprazole-ddi",
         "Title": "Yu 2001 (Moclobemide 300 mg po)",
         "SimulationDuration": 24,
         "TimeUnit": "h",
@@ -445,15 +439,25 @@
     ],
     "DDIRatioPlots": [
       {
-        "SectionId": 2,
+        "SectionReference": "qualification-of-cyp2c19-mediated-ddi",
         "Title": "CYP2C19 DDI",
-        "PKParameter": "AUC|CMAX",
-        "PlotType": "predictedVsObserved|residualsVsObserved",
+        "PKParameters": [
+          "AUC",
+          "CMAX"
+        ],
+        "PlotTypes": [
+          "predictedVsObserved",
+          "residualsVsObserved"
+        ],
         "Artifacts": [
           "Plot",
           "GMFE",
           "Measure",
           "Table"
+        ],
+        "Subunits": [
+          "Perpetrator",
+          "Victim"
         ],
         "Groups": [
           {
@@ -469,14 +473,12 @@
                   "Project": "Omeprazole-Fluvoxamine-DDI",
                   "Simulation": "omeprazole 40mg po asian EM",
                   "StartTime": 120,
-                  "EndTime": "Inf",
                   "TimeUnit": "h"
                 },
                 "SimulationDDI": {
                   "Project": "Omeprazole-Fluvoxamine-DDI",
                   "Simulation": "omeprazole 40mg po asian EM fluvoxamine 50mg po",
                   "StartTime": 120,
-                  "EndTime": "Inf",
                   "TimeUnit": "h"
                 }
               }
@@ -495,20 +497,17 @@
                   "Project": "Omeprazole-Fluvoxamine-DDI",
                   "Simulation": "omeprazole 40mg po asian PM",
                   "StartTime": 120,
-                  "EndTime": "Inf",
                   "TimeUnit": "h"
                 },
                 "SimulationDDI": {
                   "Project": "Omeprazole-Fluvoxamine-DDI",
                   "Simulation": "omeprazole 40mg po asian PM fluvoxamine 50mg po",
                   "StartTime": 120,
-                  "EndTime": "Inf",
                   "TimeUnit": "h"
                 }
               }
             ]
           },
-
           {
             "Caption": "Omeprazole + Moclobemide (EM)",
             "Color": "#b2182b",
@@ -522,20 +521,17 @@
                   "Project": "Omeprazole-Moclobemide-DDI",
                   "Simulation": "omeprazole 40mg po asian EM",
                   "StartTime": 0,
-                  "EndTime": "Inf",
                   "TimeUnit": "h"
                 },
                 "SimulationDDI": {
                   "Project": "Omeprazole-Moclobemide-DDI",
                   "Simulation": "omeprazole 40mg po asian EM moclobemide 300mg po",
                   "StartTime": 0,
-                  "EndTime": "Inf",
                   "TimeUnit": "h"
                 }
               }
             ]
           },
-          
           {
             "Caption": "Omeprazole + Moclobemide (PM)",
             "Color": "#003300",
@@ -549,20 +545,17 @@
                   "Project": "Omeprazole-Moclobemide-DDI",
                   "Simulation": "omeprazole 40mg po asian PM",
                   "StartTime": 0,
-                  "EndTime": "Inf",
                   "TimeUnit": "h"
                 },
                 "SimulationDDI": {
                   "Project": "Omeprazole-Moclobemide-DDI",
                   "Simulation": "omeprazole 40mg po asian PM moclobemide 300mg po",
                   "StartTime": 0,
-                  "EndTime": "Inf",
                   "TimeUnit": "h"
                 }
               }
             ]
           },
-
           {
             "Caption": "S-Mephenytoin + Fluvoxamine 27.5 mg",
             "Color": "#0000FF",
@@ -576,14 +569,12 @@
                   "Project": "S-mephenytoin-Fluvoxamine-DDI",
                   "Simulation": "S-Mephenytoin 100mg po",
                   "StartTime": 176,
-                  "EndTime": "Inf",
                   "TimeUnit": "h"
                 },
                 "SimulationDDI": {
                   "Project": "S-mephenytoin-Fluvoxamine-DDI",
                   "Simulation": "S-Mephenytoin 100mg po fluvoxamine 27.5mg po",
                   "StartTime": 176,
-                  "EndTime": "Inf",
                   "TimeUnit": "h"
                 }
               }
@@ -602,14 +593,12 @@
                   "Project": "S-mephenytoin-Fluvoxamine-DDI",
                   "Simulation": "S-Mephenytoin 100mg po",
                   "StartTime": 176,
-                  "EndTime": "Inf",
                   "TimeUnit": "h"
                 },
                 "SimulationDDI": {
                   "Project": "S-mephenytoin-Fluvoxamine-DDI",
                   "Simulation": "S-Mephenytoin 100mg po fluvoxamine 45.8mg po",
                   "StartTime": 176,
-                  "EndTime": "Inf",
                   "TimeUnit": "h"
                 }
               }
@@ -628,14 +617,12 @@
                   "Project": "S-mephenytoin-Fluvoxamine-DDI",
                   "Simulation": "S-Mephenytoin 100mg po",
                   "StartTime": 176,
-                  "EndTime": "Inf",
                   "TimeUnit": "h"
                 },
                 "SimulationDDI": {
                   "Project": "S-mephenytoin-Fluvoxamine-DDI",
                   "Simulation": "S-Mephenytoin 100mg po fluvoxamine 64.1mg po",
                   "StartTime": 176,
-                  "EndTime": "Inf",
                   "TimeUnit": "h"
                 }
               }
@@ -654,14 +641,12 @@
                   "Project": "Omeprazole-Moclobemide-DDI",
                   "Simulation": "moclobemide 300mg po asian EM",
                   "StartTime": 0,
-                  "EndTime": "Inf",
                   "TimeUnit": "h"
                 },
                 "SimulationDDI": {
                   "Project": "Omeprazole-Moclobemide-DDI",
                   "Simulation": "omeprazole 40mg po asian EM moclobemide 300mg po",
                   "StartTime": 0,
-                  "EndTime": "Inf",
                   "TimeUnit": "h"
                 }
               }
@@ -674,37 +659,36 @@
   "Inputs": [],
   "Sections": [
     {
-      "Id": 1,
-      "Title": "1 Introduction",
-      "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Empty.md",
+      "Reference": "introduction",
+      "Title": "Introduction",
       "Sections": [
         {
-          "Id": 11,
-          "Title": "1.1 Objective",
+          "Reference": "objective",
+          "Title": "Objective",
           "Content": "Content/Qualification_objective.md"
         },
         {
-          "Id": 12,
-          "Title": "1.2 CYP2C19 DDI Network",
+          "Reference": "cyp2c19-ddi-network",
+          "Title": "CYP2C19 DDI Network",
           "Content": "Content/Qualification_DDI_network_description.md",
           "Sections": [
             {
-              "Id": 1201,
+              "Reference": "omeprazole-moclobemide-ddi",
               "Title": "Omeprazole - Moclobemide DDI",
               "Content": "Content/Omeprazole-Moclobemide-DDI.md"
             },
             {
-              "Id": 1202,
+              "Reference": "omeprazole-fluvoxamine-ddi",
               "Title": "Omeprazole - Fluvoxamine DDI",
               "Content": "Content/Omeprazole-Fluvoxamine-DDI.md"
             },
             {
-              "Id": 1203,
+              "Reference": "s-mephenytoin-fluvoxamine-ddi",
               "Title": "S-Mephenytoin - Fluvoxamine DDI",
               "Content": "Content/S-Mephenytoin-Fluvoxamine-DDI.md"
             },
             {
-              "Id": 1204,
+              "Reference": "moclobemide-omeprazole-ddi",
               "Title": "Moclobemide - Omeprazole DDI",
               "Content": "Content/Moclobemide-Omeprazole-DDI.md"
             }
@@ -713,76 +697,71 @@
       ]
     },
     {
-      "Id": 2,
-      "Title": "2 Qualification of Use Case CYP2C19-mediated DDI",
+      "Reference": "qualification-of-cyp2c19-mediated-ddi",
+      "Title": "Qualification of Use Case CYP2C19-mediated DDI",
       "Content": "Content/Intro_evaluation_DDI_network.md"
     },
     {
-      "Id": 3,
-      "Title": "3 Concentration-Time Profiles",
+      "Reference": "ct-profiles",
+      "Title": "Concentration-Time Profiles",
       "Content": "Content/Intro_evaluation_CTprofiles.md",
       "Sections": [
         {
-          "Id": 301,
-          "Title": "3.1 Omeprazole - Moclobemide DDI",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Empty.md"
+          "Reference": "omeprazole-moclobemide-ddi",
+          "Title": "Omeprazole - Moclobemide DDI"
         },
         {
-          "Id": 302,
-          "Title": "3.2 Omeprazole - Fluvoxamine DDI",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Empty.md"
+          "Reference": "omeprazole-fluvoxamine-ddi",
+          "Title": "Omeprazole - Fluvoxamine DDI"
         },
         {
-          "Id": 303,
-          "Title": "3.3 S-Mephenytoin - Fluvoxamine DDI",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Empty.md"
+          "Reference": "s-mephenytoin-fluvoxamine-ddi",
+          "Title": "S-Mephenytoin - Fluvoxamine DDI"
         },
         {
-          "Id": 304,
-          "Title": "3.4 Moclobemide - Omeprazole DD",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Empty.md"
+          "Reference": "moclobemide-omeprazole-ddi",
+          "Title": "Moclobemide - Omeprazole DDI"
         }
       ]
     },
     {
-      "Id": 4,
-      "Title": "4 Conclusion",
+      "Reference": "conclusion",
+      "Title": "Conclusion",
       "Content": "Content/Section4_Conclusion.md",
       "Sections": []
     },
     {
-      "Id": 5,
-      "Title": "5 References",
+      "Reference": "main-references",
+      "Title": "References",
       "Content": "Content/References.md",
       "Sections": []
     },
     {
-      "Id": 6,
-      "Title": "6 Appendix",
-      "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Empty.md",
+      "Reference": "appendix",
+      "Title": "Appendix",
       "Sections": [
         {
-          "Id": 61,
-          "Title": "6.1 Open Systems Pharmacology Suite (OSPS) Introduction",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/OSPS_Introduction.md"
+          "Reference": "osp-introduction",
+          "Title": "Open Systems Pharmacology Suite (OSPS) Introduction",
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.3/OSPS_Introduction.md"
         },
         {
-          "Id": 62,
-          "Title": "6.2 Mathematical Implementation of Drug-Drug Interactions",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Mathematical_Implementation_of_DDI.md"
+          "Reference": "mathematical-implementation-of-ddi",
+          "Title": "Mathematical Implementation of Drug-Drug Interactions",
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.3/Mathematical_Implementation_of_DDI.md"
         },
         {
-          "Id": 63,
-          "Title": "6.3 Automatic (re)-qualification workflow",
-          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.2/Qualification_Workflow.md"
+          "Reference": "automatic-requalification-workflow",
+          "Title": "Automatic (re)-qualification workflow",
+          "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.3/Qualification_Workflow.md"
         }
       ]
     },
     {
-      "Id": 7,
-      "Title": "7 Glossary",
+      "Reference": "glossary",
+      "Title": "Glossary",
       "Content": "Content/glossary.md"
-  }
+    }
   ],
   "Intro": [
     {
