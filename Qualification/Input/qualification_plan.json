@@ -7,15 +7,15 @@
     },
     {
       "Id": "Moclobemide",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Moclobemide-Model/v1.1/Moclobemide-Model.json"
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Moclobemide-Model/v2.0/Moclobemide-Model.json"
     },
     {
       "Id": "Omeprazole",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Omeprazole-Model/v1.1/Omeprazole-Model.json"
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Omeprazole-Model/v2.0/Omeprazole-Model.json"
     },
     {
       "Id": "S_Mephenytoin",
-      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/S-Mephenytoin-Model/v1.1/S_Mephenytoin-Model.json"
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/S-Mephenytoin-Model/v2.0/S_Mephenytoin-Model.json"
     },
     {
       "Id": "Omeprazole-Fluvoxamine-DDI",
