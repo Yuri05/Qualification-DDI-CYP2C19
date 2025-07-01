@@ -673,22 +673,22 @@
           "Content": "Content/Qualification_DDI_network_description.md",
           "Sections": [
             {
-              "Reference": "omeprazole-moclobemide-ddi",
+              "Reference": "network-omeprazole-moclobemide-ddi",
               "Title": "Omeprazole - Moclobemide DDI",
               "Content": "Content/Omeprazole-Moclobemide-DDI.md"
             },
             {
-              "Reference": "omeprazole-fluvoxamine-ddi",
+              "Reference": "network-omeprazole-fluvoxamine-ddi",
               "Title": "Omeprazole - Fluvoxamine DDI",
               "Content": "Content/Omeprazole-Fluvoxamine-DDI.md"
             },
             {
-              "Reference": "s-mephenytoin-fluvoxamine-ddi",
+              "Reference": "network-s-mephenytoin-fluvoxamine-ddi",
               "Title": "S-Mephenytoin - Fluvoxamine DDI",
               "Content": "Content/S-Mephenytoin-Fluvoxamine-DDI.md"
             },
             {
-              "Reference": "moclobemide-omeprazole-ddi",
+              "Reference": "network-moclobemide-omeprazole-ddi",
               "Title": "Moclobemide - Omeprazole DDI",
               "Content": "Content/Moclobemide-Omeprazole-DDI.md"
             }
